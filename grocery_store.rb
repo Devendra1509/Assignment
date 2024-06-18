@@ -69,7 +69,7 @@ class GroceryStore
 
     product = Product.new(@next_id, name, price, quantity)
     @products << product
-    @next_id += 1
+    @next_id =@next_id + 1
 
     puts "Product added successfully!"
   end
@@ -124,7 +124,7 @@ class GroceryStore
         quantity = gets.chomp.to_i
 
         if quantity <= product.quantity
-          product.quantity -= quantity
+          product.quantity =product.quantity - quantity
           @cart << { product: product, quantity: quantity }
           puts "Added #{quantity} of #{product.name} to your cart."
         else
