@@ -22,4 +22,4 @@ loop do
   end
 end
 
-puts "Thank you for using the Grocery Store system!"
+puts "Thank you for using the Grocery store!"
