@@ -150,7 +150,7 @@ class GroceryStore
       product = item[:product]
       quantity = item[:quantity]
       price = product.price * quantity
-      total_price += price
+      total_price = total_price + price
       puts "Product: #{product.name}, Quantity: #{quantity}, Price: #{price}"
     end
     puts "Total Price: #{total_price}"
