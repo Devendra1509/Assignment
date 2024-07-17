@@ -141,19 +141,5 @@ class GroceryStore
     generate_bill
   end
 
-  def generate_bill
-    puts "------------------"
-    puts "\nBill:Generated"
-    puts "------------------"
-    total_price = 0
-    @cart.each do |item|
-      product = item[:product]
-      quantity = item[:quantity]
-      price = product.price * quantity
-      total_price = total_price + price
-      puts "Product: #{product.name}, Quantity: #{quantity}, Price: #{price}"
-    end
-    puts "Total Price: #{total_price}"
-    @cart.clear
-  end
+  
 end
